@@ -29,10 +29,10 @@ func main() {
 		panic(err)
 	}
 
-	token := string(pair.Value)
+	//token := string(pair.Value)
 
 	dClient := disgord.New(disgord.Config{
-		BotToken: &token,
+		BotToken: "token",
 	})
 
 	defer dClient.StayConnectedUntilInterrupted(context.Background())
